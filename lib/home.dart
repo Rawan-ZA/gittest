@@ -51,17 +51,21 @@ class Home extends StatelessWidget{
           decoration: BoxDecoration(
             color: Color(0xfff7f7f7)
           ),
-            child:Row(
+            child:Column(
+              spacing: 10,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+              Row(
               spacing: 10,
               children: [
                 Expanded(
                   child: Container(
-                    // padding: EdgeInsets.all(10),
-                    width: 200,
-                    height: 260,
+                    padding: EdgeInsets.all(15),
+                    width: 150,
+                    height: 290,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(0xffffffff)
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xffffffff)
                     ),
                     child:Column(
                       spacing: 10,
@@ -72,141 +76,275 @@ class Home extends StatelessWidget{
                             ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Image.asset("images/one.jpg",
-                              fit:BoxFit.cover,
-                              height: double.infinity,
-                              // width: 200,
-                                ),
+                                fit:BoxFit.cover,
+                                height: double.infinity,
+                                // width: 130,
+                              ),
                             ),
                             // Icon(Icons.local_offer),
                           ]
                           ),
                         ),
-                        SizedBox(width: 50,),
+                        // SizedBox(width: 50,),
                         Text("Coco berry Salad",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold
-                        ),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20
+                          ),
                         ),
                         Row(
-                          // mainAxisAlignment: MainAxisAlignment.center,
+                         spacing: 10,
                           children: [
                             Icon(Icons.alarm , size: 26, color: Color(0xffa0a0a0),),
-                            Text("30 min",style:
-                              TextStyle(
-                                  color: Color(0xffa0a0a0)
-                              ),),
+                            Text("30 Min",style:
+                            TextStyle(
+                                color: Color(0xffa0a0a0),
+                              fontWeight: FontWeight.bold
+                            ),),
                           ],
                         ),
-                          Row(
-                            children: [
-                             Row(
-                               // mainAxisAlignment: MainAxisAlignment.spaceAround,
-                               // crossAxisAlignment: CrossAxisAlignment.center,
-                               children: [
-                                 Icon(Icons.star),
-                                 Text("4.5"),
-                               ],
-                             ),
-                              Icon(Icons.heart_broken_sharp)
-                            ],
-                          )
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              spacing: 10,
+                              // crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
+                                Text("4.5", style:
+                                  TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xff5bc439),
+                                    fontSize: 18
+                                  ),),
+                              ],
+                            ),
+                            Icon(Icons.heart_broken_sharp,
+                            color: Color(0xffd0ced4), size: 26,)
+                          ],
+                        )
                       ],
                     ),
                   ),
                 ),
-                Container(
-                  width: 200,
-                  height: 350,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(0xffffffff)
-                  ),
-                  child:Column(
-                    children: [
-                      Stack(children:
-                      [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
-                          child: Image.asset("images/one.jpg",
-                            fit:BoxFit.cover,
-                            height: 200,
-                            width: 180,),
-
-                        ),
-                        Icon(Icons.local_offer),
-                      ]
-                      ),
-                      Text("Coco berry Salad",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold
-                        ),),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(Icons.alarm),
-                          Text("30 min"),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Row(
-                            children: [
-                              Icon(Icons.star),
-                              Text("4.5"),
-                            ],
+                Expanded(
+                  child: Container(
+                    padding: EdgeInsets.all(15),
+                    width: 150,
+                    height: 290,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color(0xffffffff)
+                    ),
+                    child:Column(
+                      spacing: 10,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Stack(children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(20),
+                              child: Image.asset("images/two.jpg",
+                                fit:BoxFit.cover,
+                                height: double.infinity,
+                                width: double.infinity,
+                              ),
+                            ),
+                            // Icon(Icons.local_offer),
+                          ]
                           ),
-                          Icon(Icons.heart_broken_sharp)
-                        ],
-                      )
-                    ],
+                        ),
+                        // SizedBox(width: 50,),
+                        Text("Marinated Grilled Burger",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20
+                          ),
+                        ),
+                        Row(
+                          spacing: 10,
+                          children: [
+                            Icon(Icons.alarm , size: 26, color: Color(0xffa0a0a0),),
+                            Text("30 Min",style:
+                            TextStyle(
+                                color: Color(0xffa0a0a0),
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              spacing: 10,
+                              // crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
+                                Text("4.5", style:
+                                TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Color(0xff5bc439),
+                                    fontSize: 18
+                                ),),
+                              ],
+                            ),
+                            Icon(Icons.heart_broken_sharp,
+                              color: Color(0xffd0ced4), size: 26,)
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
-                // Container(
-                //   decoration: BoxDecoration(
-                //       color: Color(0xffffffff)
-                //   ),
-                //   child:Column(
-                //     children: [
-                //       Stack(children:
-                //       [
-                //         ClipRRect(
-                //           borderRadius: BorderRadius.circular(15),
-                //           child: Image.asset("images/one.jpg",
-                //             height: 200,
-                //             width: 200,),
-                //
-                //         ),
-                //         Icon(Icons.local_offer),
-                //       ]
-                //       ),
-                //       Text("Coco berry Salad",
-                //         style: TextStyle(
-                //             fontWeight: FontWeight.bold
-                //         ),),
-                //       Row(
-                //         mainAxisAlignment: MainAxisAlignment.center,
-                //         children: [
-                //           Icon(Icons.alarm),
-                //           Text("30 min"),
-                //         ],
-                //       ),
-                //       Row(
-                //         children: [
-                //           Row(
-                //             children: [
-                //               Icon(Icons.star),
-                //               Text("4.5"),
-                //             ],
-                //           ),
-                //           Icon(Icons.heart_broken_sharp)
-                //         ],
-                //       )
-                //     ],
-                //   ),
-                // ),
               ],
+              ),
+                Row(
+                  spacing: 10,
+                  children: [
+                    Expanded(
+                      child: Container(
+                        padding: EdgeInsets.all(15),
+                        width: 150,
+                        height: 290,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Color(0xffffffff)
+                        ),
+                        child:Column(
+                          spacing: 10,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Stack(children: [
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(20),
+                                  child: Image.asset("images/three.jpg",
+                                    fit:BoxFit.cover,
+                                    height: double.infinity,
+                                    // width: 130,
+                                  ),
+                                ),
+                                // Icon(Icons.local_offer),
+                              ]
+                              ),
+                            ),
+                            // SizedBox(width: 50,),
+                            Text("Fresh Salad with Letuce",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20
+                              ),
+                            ),
+                            Row(
+                              spacing: 10,
+                              children: [
+                                Icon(Icons.alarm , size: 26, color: Color(0xffa0a0a0),),
+                                Text("30 Min",style:
+                                TextStyle(
+                                    color: Color(0xffa0a0a0),
+                                    fontWeight: FontWeight.bold
+                                ),),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  spacing: 10,
+                                  // crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
+                                    Text("4.5", style:
+                                    TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xff5bc439),
+                                        fontSize: 18
+                                    ),),
+                                  ],
+                                ),
+                                Icon(Icons.heart_broken_sharp,
+                                  color: Color(0xffd0ced4), size: 26,)
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        padding: EdgeInsets.all(15),
+                        width: 150,
+                        height: 290,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Color(0xffffffff)
+                        ),
+                        child:Column(
+                          spacing: 10,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Stack(children: [
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(20),
+                                  child: Image.asset("images/four.jpg",
+                                    fit:BoxFit.cover,
+                                    height: double.infinity,
+                                    width: double.infinity,
+                                  ),
+                                ),
+                                // Icon(Icons.local_offer),
+                              ]
+                              ),
+                            ),
+                            // SizedBox(width: 50,),
+                            Text("Fresh Salad Green berry",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20
+                              ),
+                            ),
+                            Row(
+                              spacing: 10,
+                              children: [
+                                Icon(Icons.alarm , size: 26, color: Color(0xffa0a0a0),),
+                                Text("30 Min",style:
+                                TextStyle(
+                                    color: Color(0xffa0a0a0),
+                                    fontWeight: FontWeight.bold
+                                ),),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  spacing: 10,
+                                  // crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
+                                    Text("4.5", style:
+                                    TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xff5bc439),
+                                        fontSize: 18
+                                    ),),
+                                  ],
+                                ),
+                                Icon(Icons.heart_broken_sharp,
+                                  color: Color(0xffd0ced4), size: 26,)
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+
+              ],
+            )
             ),
-        ),
       ),
         );
   }
