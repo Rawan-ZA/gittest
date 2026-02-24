@@ -56,6 +56,7 @@ class Home extends StatelessWidget{
               children: [
                 Expanded(
                   child: Container(
+                    // padding: EdgeInsets.all(10),
                     width: 200,
                     height: 260,
                     decoration: BoxDecoration(
@@ -64,7 +65,6 @@ class Home extends StatelessWidget{
                     ),
                     child:Column(
                       spacing: 10,
-                      // mainAxisAlignment: MainAxisAlignment.spaceAround,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
@@ -90,8 +90,11 @@ class Home extends StatelessWidget{
                         Row(
                           // mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.alarm),
-                            Text("30 min"),
+                            Icon(Icons.alarm , size: 26, color: Color(0xffa0a0a0),),
+                            Text("30 min",style:
+                              TextStyle(
+                                  color: Color(0xffa0a0a0)
+                              ),),
                           ],
                         ),
                           Row(
