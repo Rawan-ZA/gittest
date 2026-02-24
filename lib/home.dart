@@ -46,7 +46,7 @@ class Home extends StatelessWidget{
         padding: const EdgeInsets.all(15),
         child: Container(
          width: 500,
-          height:400,
+          height:1000,
           padding: EdgeInsets.all(20),
           decoration: BoxDecoration(
             color: Color(0xfff7f7f7)
@@ -198,7 +198,7 @@ class Home extends StatelessWidget{
                 ),
               ],
               ),
-                Row(
+               Row(
                   spacing: 10,
                   children: [
                     Expanded(
@@ -218,7 +218,7 @@ class Home extends StatelessWidget{
                               child: Stack(children: [
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(20),
-                                  child: Image.asset("images/three.jpg",
+                                  child:Image.asset("images/three.jpg",
                                     fit:BoxFit.cover,
                                     height: double.infinity,
                                     // width: 130,
@@ -341,7 +341,48 @@ class Home extends StatelessWidget{
                     ),
                   ],
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Recommended",style:
+                      TextStyle(
+                        color: Color(0xff000000),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 24,
+                        fontFamily: "arial"
+                      ),),
+                    Container(
+                      width: 80,
+                      height: 30,
+                      padding: EdgeInsets.all(5),
+                      child: Text("See All",textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Color(0xffffffff),
+                        fontSize: 16
+                      )),
+                      
+                      decoration: BoxDecoration(
+                        color: Color(0xff171717),
+                        borderRadius: BorderRadius.circular(10)
+                      ),
+                    )
 
+                  ],
+                ),
+                Container(
+                  child: Row(
+                    children: [
+                      Image.asset("fruit.png"),
+                      Column(
+                        children: [
+                          Text("Fresh Veg-Salad"),
+                          Text("Fresh Salad with Green berry"),
+                          Text("\$8.99"),
+                        ],
+                      )
+                    ],
+                  ),
+                )
               ],
             )
             ),
