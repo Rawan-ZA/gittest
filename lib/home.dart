@@ -7,15 +7,20 @@ class Home extends StatelessWidget{
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        leading:Container(child: Icon(Icons.arrow_back_ios),
-          padding: EdgeInsets.all(30),
+        backgroundColor: Color(0xffffffff),
+        leading:Container(
+          child: Icon(Icons.arrow_back_ios,size: 22,
+              fontWeight: FontWeight.bold,),
+          alignment: Alignment.centerRight,
           decoration:BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
-              color: Color(0xfff8f0ef),
-              blurRadius:8,
-              offset: Offset(1,1),
-              spreadRadius: 5
+              color: Color(0xfffbe1de),
+              blurStyle: BlurStyle.outer,
+              blurRadius:10,
+              offset: Offset(20,20),
+              spreadRadius: 8
           ),
           ]
         ),
@@ -23,19 +28,24 @@ class Home extends StatelessWidget{
         title: Center(
           child: Text("Popular Food",
           style: TextStyle(
-           fontWeight: FontWeight.w400
+           fontWeight: FontWeight.w500,
+               fontSize: 22,
           ),
                 ),
         ) ,
        actions: [
          Container(
-           child: Icon(Icons.search),
+           alignment: Alignment.centerLeft,
+           child: Icon(Icons.search,size: 30,),
            decoration: BoxDecoration(
+               borderRadius: BorderRadius.circular(15),
              boxShadow: [
                BoxShadow(
-                   color: Color(0xfff8f0ef),
-                   blurRadius: 8,
-                   offset: Offset(1, 1)
+                   color: Color(0xfffbe1de),
+                   blurStyle: BlurStyle.outer,
+                   blurRadius:10,
+                   offset: Offset(20,20),
+                   spreadRadius: 8
                ),
              ]
            ),
