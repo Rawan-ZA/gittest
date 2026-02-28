@@ -54,7 +54,7 @@ class Home extends StatelessWidget{
       ),
       body: Padding(
         padding: const EdgeInsets.all(15),
-        child: Container(
+          child: Container(
          width: 500,
           height:1000,
           padding: EdgeInsets.all(20),
@@ -122,7 +122,7 @@ class Home extends StatelessWidget{
                                   spacing: 10,
                                   // crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
+                                    Icon(Icons.star_rounded , size: 24, color: Color(0xff5bc439),),
                                     Text("4.5", style:
                                       TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -131,7 +131,7 @@ class Home extends StatelessWidget{
                                       ),),
                                   ],
                                 ),
-                                Icon(Icons.heart_broken_sharp,
+                                Icon(Icons.favorite,
                                 color: Color(0xffd0ced4), size: 26,)
                               ],
                             )
@@ -191,7 +191,7 @@ class Home extends StatelessWidget{
                                   spacing: 10,
                                   // crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
+                                    Icon(Icons.star_rounded , size: 24, color: Color(0xff5bc439),),
                                     Text("4.5", style:
                                     TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -200,7 +200,7 @@ class Home extends StatelessWidget{
                                     ),),
                                   ],
                                 ),
-                                Icon(Icons.heart_broken_sharp,
+                                Icon(Icons.favorite,
                                   color: Color(0xffd0ced4), size: 26,)
                               ],
                             )
@@ -265,7 +265,7 @@ class Home extends StatelessWidget{
                                   spacing: 10,
                                   // crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
+                                    Icon(Icons.star_rounded , size: 24, color: Color(0xff5bc439),),
                                     Text("4.5", style:
                                     TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -274,7 +274,7 @@ class Home extends StatelessWidget{
                                     ),),
                                   ],
                                 ),
-                                Icon(Icons.heart_broken_sharp,
+                                Icon(Icons.favorite,
                                   color: Color(0xffd0ced4), size: 26,)
                               ],
                             )
@@ -334,7 +334,7 @@ class Home extends StatelessWidget{
                                   spacing: 10,
                                   // crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
+                                    Icon(Icons.star_rounded , size: 24, color: Color(0xff5bc439),),
                                     Text("4.5", style:
                                     TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -343,7 +343,7 @@ class Home extends StatelessWidget{
                                     ),),
                                   ],
                                 ),
-                                Icon(Icons.heart_broken_sharp,
+                                Icon(Icons.favorite,
                                   color: Color(0xffd0ced4), size: 26,)
                               ],
                             )
@@ -373,13 +373,13 @@ class Home extends StatelessWidget{
                                 color: Color(0xffffffff),
                                 fontSize: 16
                             )),
-                  
+
                         decoration: BoxDecoration(
                             color: Color(0xff171717),
                             borderRadius: BorderRadius.circular(10)
                         ),
                       )
-                  
+
                     ],
                   ),
                 ),
@@ -511,7 +511,7 @@ class Home extends StatelessWidget{
                     ],
                   ) ,
                 )
-               
+
                   ],
             ),
                 ),

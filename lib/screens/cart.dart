@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 
 class cart extends StatelessWidget{
+  const cart({super.key});
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -57,7 +59,7 @@ class cart extends StatelessWidget{
             padding: const EdgeInsets.all(20),
             child: Column(
               // mainAxisAlignment: MainAxisAlignment.start,
-              spacing: 10,
+              spacing: 15,
               children: [
                 Container(
                   height: 140,
@@ -301,8 +303,10 @@ class cart extends StatelessWidget{
                     ],
                   ),
                 ),
-                Row(
+                Column(
+                  spacing: 15,
                   mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Recepient Address",style:
                     TextStyle(
@@ -310,8 +314,24 @@ class cart extends StatelessWidget{
                       fontWeight: FontWeight.bold,
                     ),
                       textAlign: TextAlign.left,),
-                  ],
+               Expanded(
+                 child: Container(
+                      width: 500,
+                      padding: EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                          color: Color(0xffeeeef0),
+                          borderRadius: BorderRadius.circular(10)
+                      ),
+                      child: Text("9224 Jailyn Terrace, block 2, North Maryjaneton, Tanzania, 4387242",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 18,
+                        ),),
+                    ),
+               ),
+            ],
                 ),
+
                 Column(
                   spacing: 15,
                   crossAxisAlignment: CrossAxisAlignment.start,
